@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      BooksApp
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="top-search">
+  <ion-searchbar (ionInput)="getItems($event)" ></ion-searchbar>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+  <div *ngFor="let book of books" class="card-anim">
+    <div class="card card-3">
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-left class="card-img">
+          <img src="./assets/icon/book.ico">
+        </ion-thumbnail>
+        <p> {{book.id}} </p>
+        <p> {{book.name}} </p>
+        <p>{{book.author}}</p>
+      <button icon-right icon-only><ion-icon name="trash"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+    </div> 
+  </div>
+</ion-content>

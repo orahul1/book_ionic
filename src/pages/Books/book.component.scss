@@ -1,0 +1,68 @@
+
+#title-text{
+   font-size: 20px;
+   color:#fff;
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 100px;
+  margin: 1rem;
+  position: relative;
+  width: 340px;
+}
+.card-3 {
+  box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+}
+
+img.card-img {
+width:40px; 
+height:40px;
+}
+
+.card-details {
+  color:#212121;
+  size:3px;
+}
+ul{
+  list-style-type: none;
+}
+.top-search{
+  position: relative;
+}
+
+
+.card-anim{
+    animation: slideInLeft 1s;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+     Add
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <br><br>
+   <div class="card-1 card-4">
+  <ion-list>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="id" name="id" placeholder="Id"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text"  [(ngModel)]="name" name="name" placeholder="Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="author" name="author" placeholder="Author"></ion-input>
+  </ion-item>
+ <p text-center> <button ion-button color="danger"  (click)="addBook()">ADD</button></p>
+
+</ion-list>
+   </div>
+</ion-content>
